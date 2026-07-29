@@ -11,8 +11,8 @@ from pyrogram.enums import ParseMode
 
 # ================= تنظیمات =================
 
-BOT_TOKEN = "5088657122:AAGGal-y6fXHjtwdD74AxE-dOWzPvcdfSjU"
-BOT_ID = "@YOUR_BOT_ID"
+BOT_TOKEN = "6964975788:AAG40dw5kr-1GvfRPp4RZGt6DN22NP_5c3g"
+BOT_ID = "@ir_ahangdlbot"
 
 API_ID = 3335796
 API_HASH = "138b992a0e672e8346d8439c3f42ea78"
@@ -138,8 +138,7 @@ async def start(client, message):
 هم اکنون نام آهنگ موردنظرتو برام بفرست.
 تا برات فایلشو بفرستم💗😍
 
-🖍️ سازنده ربات :
-<a href="https://telegram.me/farshidband">FﾑRSみɨo-BﾑŊo</a></b>
+🖍️ سازنده ربات : <a href="https://telegram.me/farshidband">FﾑRSみɨo-BﾑŊの</a></b>
 """
 
     await message.reply(
@@ -171,7 +170,7 @@ async def music(client, message):
 
     song = await search_song(query)
 
-    await status.edit("⏳ در حال دانلود...")
+    await status.edit("⏳ در حال آپلود...😍")
 
     file = await download_music(song, user_id)
 
