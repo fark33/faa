@@ -11,7 +11,7 @@ from pyrogram.enums import ParseMode
 
 # ================= تنظیمات =================
 
-BOT_TOKEN = "6964975788:AAG40dw5kr-1GvfRPp4RZGt6DN22NP_5c3g"
+BOT_TOKEN = "6964975788:AAG2K-6mucoVOgNTrb3YH4yON4K5Y6vrR_s"
 BOT_ID = "@ir_ahangdlbot"
 
 API_ID = 3335796
@@ -150,14 +150,12 @@ async def start(client, message):
 
 # ================= دریافت آهنگ =================
 
-@app.on_message(filters.private & filters.text)
+# فیلتر ~filters.regex(r"^/") تمام پیام‌هایی که با slash شروع می‌شوند را نادیده می‌گیرد
+@app.on_message(filters.private & filters.text & ~filters.regex(r"^/"))
 async def music(client, message):
 
     query = message.text.strip()
     user_id = message.from_user.id
-
-    if query.startswith("/"):
-        return
 
     current_time = time.time()
 
@@ -204,4 +202,3 @@ async def music(client, message):
 if __name__ == "__main__":
     print("✅ Music Bot is running successfully!")
     app.run()
-
