@@ -14,7 +14,7 @@ from pyrogram.enums import ParseMode
 
 # ================= تنظیمات =================
 
-BOT_TOKEN = "5098580833:AAEzriKZYpbJOljEwP-8KrOsYlGY-hRyDXA"
+BOT_TOKEN = "5088657122:AAGGal-y6fXHjtwdD74AxE-dOWzPvcdfSjU"
 BOT_ID = "@YOUR_BOT_ID"
 
 API_ID = 3335796
