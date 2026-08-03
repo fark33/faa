@@ -17,7 +17,7 @@ BOT_TOKEN = os.environ.get(
     "8189638115:AAHJ-gXcWm6i25nSmpcr7QnTPAhf9nuOwF4"
 )
 
-BOT_ID = "@ir_ahangdlbot ✨❤️"
+BOT_ID = "@ir_ahangdlbot"
 
 API_ID = 3335796
 API_HASH = "138b992a0e672e8346d8439c3f42ea78"
