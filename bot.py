@@ -14,7 +14,7 @@ from shazamio import Shazam
 
 BOT_TOKEN = os.environ.get(
     "BOT_TOKEN",
-    "8189638115:AAHJ-gXcWm6i25nSmpcr7QnTPAhf9nuOwF4"
+    "6964975788:AAG2K-6mucoVOgNTrb3YH4yON4K5Y6vrR_s"
 )
 
 BOT_ID = "@ir_ahangdlbot"
