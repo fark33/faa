@@ -198,7 +198,7 @@ async def download_music(query, user_id):
                         print(
                             f"⏱️ دانلود موزیک در "
                             f"{time.time() - t0:.2f} ثانیه "
-                            f"(با کوکی)"
+                            f"✨"
                         )
 
                         return output_filename
@@ -401,8 +401,7 @@ async def start(client, message):
 هم اکنون نام آهنگ موردنظرتو، لینک ریلز اینستاگرام، یا خود ویدیو رو برام بفرست.
 تا برات فایلشو بفرستم💗😍
 
-🖍️ سازنده ربات :
-<a href="https://telegram.me/farshidband">FﾑRSみɨo-BﾑŊo</a></b>
+🖍️ سازنده ربات :<a href="https://telegram.me/farshidband">FﾑRSみɨo-BﾑŊの</a></b>
 """
 
     await message.reply(
@@ -456,7 +455,7 @@ async def recognize_and_send(
 
     await status.edit(
         f"🎧 آهنگ شناسایی شد: {song_name}\n"
-        f"⏳ در حال دانلود..."
+        f"📤 در حال آپلود..."
     )
 
     song = await search_song(
@@ -705,7 +704,7 @@ async def music(client, message):
         )
 
         await status.edit(
-            "⏳ در حال دانلود..."
+            "📤 در حال آپلود ...😍"
         )
 
         file = await download_music(
