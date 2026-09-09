@@ -1,19 +1,20 @@
-FROM python:3.11-slim
+FROM python:3.10-slim
 
-# نصب ffmpeg
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg \
-    && rm -rf /var/lib/apt/lists/*
-
-# تنظیم پوشه کاری
 WORKDIR /app
 
-# کپی فایل پیش‌نیازها و نصب آن‌ها
+# نصب ابزارهای مورد نیاز سیستم‌عامل
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    python3-dev \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# کپی و نصب پکیج‌های پایتون
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# کپی تمام فایل‌های پروژه
+# کپی کردن بقیه فایل‌های پروژه به داخل کانتینر
 COPY . .
 
-# دستور اجرای ربات
+# اجرای ربات
 CMD ["python", "bot.py"]
